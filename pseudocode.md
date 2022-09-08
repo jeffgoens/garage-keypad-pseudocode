@@ -1,4 +1,4 @@
-## Pseudocode for external garage door keypad entry 
+## Pseudocode for External Garage Door Keypad Entry 
 
 ### Assumptions:
   - Opening function of a garage door can be operated remotely by a control panel.
@@ -8,12 +8,14 @@
   - Main motor unit is powered.
 
 
-### START: Create variables for the program
+### SET: Define Variables
+```
 1. CONTROL PANEL = controlPanel
     - Device that communicates to main motor unit.
 
 2. MAIN MOTOR UNIT = motorUnit
     - Motorized device that operates/pulls the door open.  
+```
 
 
 ### FUNCTION:
@@ -37,12 +39,6 @@ FUNCTION checkControlPanel
     control panel = paired to motor unit
       Accept passcode
         END
-      
-FUNCTION clearMemory
-  IF wrong passcode is entered OR door has been opened
-    THEN
-      clear passcode from panel
-        END
 
  FUNCTION checkPasscode:
   IF passcode entered = correct
@@ -53,6 +49,13 @@ FUNCTION clearMemory
       THEN
         clear passcode from panel memory and alert user
           END
+          
+FUNCTION clearMemory
+  IF wrong passcode is entered OR door has been opened
+    THEN
+      clear passcode from panel
+        END
+
  ```
  
  
@@ -62,6 +65,7 @@ FUNCTION clearMemory
  checkControlPanel
  checkPasscode
  ```
+ 
  
  ### END:
  ```
