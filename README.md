@@ -7,7 +7,7 @@ Create in-depth pseudocode file documenting a real-world process that you are fa
 - Pick a topic to pseudocode.
 - Create GitHub repo.
 - Add README.md for any important information about the repo or project.
-- Add **pseudocode.md** for your project file.
+- Add pseudocode.md for your project file.
 - Add .gitignore file to omit any directory/file from being tracked.
 
 
