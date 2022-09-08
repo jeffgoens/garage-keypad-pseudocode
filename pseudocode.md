@@ -24,36 +24,37 @@
 FUNCTION checkDoorStatus:
   IF door = open
     THEN
-      Do not accept passcode
+      do not accept passcode
         END
-  ELSE door = closed
-    THEN
-      Accept passcode
-        END
+  ELSE 
+    door = closed
+      THEN
+        accept passcode
+          END
         
 FUNCTION checkControlPanel
-  IF control panel = not paired or connected unit
+  IF controlPanel = not paired to motorUnit
     THEN
       END
   ELSE 
-    control panel = paired to motor unit
-      Accept passcode
+    controlPanel = paired to motorUnit
+      accept passcode
         END
 
  FUNCTION checkPasscode:
   IF passcode entered = correct
     THEN
-      open door and clear control panel memory     
+      open door motorUnit and clearMemory     
   ELSE 
     passcode entered = wrong  
       THEN
-        clear passcode from panel memory and alert user
+        alert user and clearMemory
           END
           
 FUNCTION clearMemory
   IF wrong passcode is entered OR door has been opened
     THEN
-      clear passcode from panel
+      clearMemory
         END
 
  ```
@@ -64,6 +65,9 @@ FUNCTION clearMemory
  checkDoorStatus
  checkControlPanel
  checkPasscode
+ 
+ controlPanel
+ motorUnit
  ```
  
  
@@ -71,5 +75,5 @@ FUNCTION clearMemory
  ```
  clearMemory
  ```
- 
-![image](https://user-images.githubusercontent.com/101759410/189179621-ff23df61-89fc-4b74-9b3e-10f0a6d956a6.png)
+ ![image](https://user-images.githubusercontent.com/101759410/189239862-19aaf409-c294-48d2-a7ce-3c5a36220eaa.png)
+
