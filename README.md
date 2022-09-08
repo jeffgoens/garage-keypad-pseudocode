@@ -1,7 +1,7 @@
 ## Onboarding Sprint 3 - Build Project Pseudocode
 
 ### Objective:
-Create in-depth pseudocode file documenting a real-world process that you are familiar with. Pseudocode shoule be human-readable detailed instructions for anyone to be able to follow. You are not writing code.
+Create in-depth pseudocode file documenting a real-world process that you are familiar with. Pseudocode should be human-readable detailed instructions for anyone to be able to follow. You are not writing code.
 
 ### Project Brief:
 - Pick a topic to pseudocode.
